@@ -1,0 +1,31 @@
+FUNCTION Dot_product(ps: INTEGER, v1,v2: ARRAY_OF INTEGER) : INTEGER
+VAR
+    i,j:INTEGER;
+BEGIN
+    FOR i FROM 0 TO v1.length-1 DO 
+     FOR j FROM 0 TO v2.length-1 DO 
+      READ (v1[i]);
+      READ (v2[j]);
+      ps := ps + (v1[i]) * (v2[j]);
+     END_FOR;
+    END_FOR;
+    RETURN (ps);
+END
+
+ALGORITHM DOTPRODUCT
+VAR
+    i,j, n: INTEGER;
+   
+BEGIN
+FOR i FROM 0 TO n-1 DO
+ FOR j FROM 0 TO n-1 DO
+    READ(n);
+ 
+   IF Dot_product() :=0;
+ THEN
+    WRITE ("ORTHOGONAL VECTORS")
+    ELSE WRITE ("NON ORTHOGONAL VECTORS")
+END_IF
+END_FOR
+END_FOR
+END
